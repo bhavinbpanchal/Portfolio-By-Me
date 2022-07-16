@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header id="header-home1">
+        
+            <div id="logo">
+                <img src="download.png">
+            </div>
+            <div>
+           
+            <nav id="navmenu">
+            
+                <ul >
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=about.html>About</a></li>
+                    <li><a href=project.html>Project</a></li>
+                    <li><a href=activities.html>Activities</a></li>
+                    <li><a href=blog.html>Blog</a></li>
+                    <li><a href=contact.html>Contact us</a></li>
+                </ul> 
+            </nav>
+        </div>
+        </header>
+        <div class="contact">
+            <h1>Contact Me</h1>
+            <div class="bottom-line3"></div>
+            <h3>Here is how you can reach me</h3>
+        </div>
+        <form>
+        <div class="form">
+           
+            <div class="content">
+                <input type="text" required>
+                <label>Name</label>
+            </div>
+            <div class="content">
+                <input type="text" required>
+                <label>Subject</label>
+            </div>
+            <div class="content">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="content">
+                <input type="text" required>
+                <label>Phone no</label>
+            </div>
+            
+        </div>
+        <div class="msgbox">
+            <textarea class="text-input message-input" placeholder="Enter Message" required rows="6" cols="140"></textarea>
+        </div>
+        <button type="submit" class="btn-dark" style="text-align:center ;">Submit</button>
+    </form>
+<div class="address">
+    <div class="add">
+        <i class="fa-solid fa-location-dot icon fa-3x"></i>
+    <h1>Address</h1><br>
+    <pre style="font-size:20px">
+      
+ B-F-2,New Khrushnabag Flat,
+ B/H lokniketan School,
+ Ranip,Ahmedabad,
+ Gujarat 382480</pre>
+    </div>
+        <div class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.068697360363!2d72.5359128147701!3d23.0579428849352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e851a5d3e4e0f%3A0x249acb663e46af9b!2sSoft%20Coding%20Solutions!5e0!3m2!1sen!2sin!4v1657274834552!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="gmap"></iframe>
+        </div>
+</div>
+<div class="msg">
+    <h1>
+        Lets start your next Project
+    </h1>
+</div>
+<footer class="footer">
+    <div class="footer_container">
+        <div class="row">
+            <div class="footer-col">
+                <h4 style="margin-left:30px ;">Resident </h4>
+                <div class="bottom-line1" ></div>
+                <pre style="margin-left:70px">
+         
+ B-F-2,New Khrushnabag Flat,
+ B/H lokniketan School,
+ Ranip,Ahmedabad,
+ Gujarat 382480
+        </pre>
+            </div>
+            <div class="footer-col">
+                <h4 style="margin-left:30px ;">Navigate</h4>
+                <div class="bottom-line1"></div>
+                <ul class="pages">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 style="margin-left:20px ;">follow Me</h4>
+                <div class="bottom-line1"></div>
+                <div class="social-links">
+                   
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://www.instagram.com/bhavin23_7/"><i class="fab fa-instagram ll"></i></a>
+                    <a href="https://www.linkedin.com/in/bhavinbpanchal"><i class="fab fa-linkedin-in ll"></i></a>
+                </div>
+                <br>
+
+                    
+
+            </div>
+</footer>
+<script>
+    const labels = document.querySelectorAll( "label" );
+
+    labels.forEach( function( label ) {
+        label.innerHTML = label.innerText
+            .split( "" )
+            .map(function(letter, idx){
+        return `<span style='transition-delay:${idx * 80}ms'>${letter}</span>`
+    })
+            .join( "" );
+    } );
+</script>
+
+    </body>
+</html>
